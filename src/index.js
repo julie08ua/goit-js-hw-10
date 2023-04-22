@@ -27,7 +27,7 @@ function onSearchBoxInput(e) {
                 countryInfoEl.innerHTML = createMarkup(data);
             }
             else if (data.length > 10) {
-                Notiflix.Notify.warning('Too many matches found. Please enter a more specific name');
+                Notiflix.Notify.info('Too many matches found. Please enter a more specific name');
             }
             else {
                 countryListEl.innerHTML = createMarkup(data);
