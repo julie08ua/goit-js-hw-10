@@ -19,13 +19,13 @@ body {
   margin-bottom: 16px;
 }
 
-.list-item {
+.js-list-item {
 display: flex;
 align-items: center;
 margin-bottom: 10px;
 }
 
-.list-item-part {
+.js-list-item-part {
   font-weight: 800;
 }
 

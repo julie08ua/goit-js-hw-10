@@ -41,15 +41,15 @@ if (arr.length === 1) {
     return arr
         .map(({ name: { official }, capital, population, flags: { svg }, languages }) =>
         `<h2 class='js-container'><img src="${svg}" alt="${official}"/>${official}</h2>
-        <p><span class='list-item-part'>Capital:</span> ${capital}</p>
-        <p><span class='list-item-part'>Population:</span> ${population}</p>
-        <p><span class='list-item-part'>Languages:</span> ${Object.values(languages)}</p>`
+        <p><span class='js-list-item-part'>Capital:</span> ${capital}</p>
+        <p><span class='js-list-item-part'>Population:</span> ${population}</p>
+        <p><span class='js-list-item-part'>Languages:</span> ${Object.values(languages)}</p>`
         )
         .join('');
 } else {
     return arr
         .map(({ name: { official }, flags: { svg } }) =>
-            `<li class='list-item'>
+            `<li class='js-list-item'>
                 <img src="${svg}" alt="${official}"/>
                 <h2 js-title>${official}</h2>
             </li>`
